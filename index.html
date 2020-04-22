@@ -2,14 +2,31 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
     <title>VueJS Tutorials</title>
+
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!--CDN material design-->
+    <link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+
+    <!--CDN Vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <!--CDN Router-->
+    <script src="https://unpkg.com/vue-router"></script>
+
+
   </head>
   <body>
+
     <div id="vue-app">
-        <h1>{{ name }}</h1>
+        <home-top-bar-small class="home-top-bar">
+          <status-bar></status-bar>
+        </home-top-bar-small>
     </div>
+
 
     <script src="app.js" charset="utf-8"></script>
   </body>
